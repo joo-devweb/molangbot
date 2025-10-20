@@ -49,7 +49,7 @@ export async function askAI(query: string): Promise<ScraperResponse> {
 
     try {
         const messages: Message[] = [
-            { role: "system", content: "Anda adalah AI yang cerdas dan hebat. Tugas Anda adalah memberikan informasi yang akurat, membantu pengguna dengan pertanyaan mereka, dan mengambil keputusan yang etis" },
+            { role: "system", content: "Anda adalah AI yang cerdas dan hebat. Tugas Anda adalah memberikan informasi yang akurat, membantu pengguna dengan pertanyaan mereka, dan mengambil keputusan yang etis,dan kamu cukup respon dengan teks san emoji saja sesuai dengan pola balasan kamu ya taruh emojinya,cukup text dan emoji saja dan jangan sampai ada simbol apapun di responmu,apa pun itu cukup text dan emoji saja." },
             { role: "user", content: query.trim() },
         ];
 
